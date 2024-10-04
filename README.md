@@ -70,7 +70,3 @@ This project is licensed under the MIT License.
 ## Contributions
 
 Contributions are welcome! If you have suggestions for improvements or additional features, feel free to open an issue or submit a pull request.
-
-## Contact
-
-For any inquiries or feedback, please reach out via the [GitHub repository](https://github.com/StarGames2025/beautifull_terminal).
