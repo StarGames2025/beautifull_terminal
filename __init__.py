@@ -1,1 +1,2 @@
-from .terminal import bt
+from . import BeautifulTerminal
+BeautifulTerminal()
