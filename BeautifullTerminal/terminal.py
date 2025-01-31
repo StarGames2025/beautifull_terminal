@@ -1,6 +1,6 @@
 import builtins
 
-class BeautifulTerminal:
+class BeautifullTerminal:
     COLORS = {
         "reset": "\033[0m",
         "red": "\033[91m",
@@ -44,21 +44,22 @@ class BeautifulTerminal:
 
         if color and color.lower() in self.COLORS:
             color = self.COLORS[color.lower()]
-        else:
-            color = self.COLORS['reset']
-
-        if "error" in message.lower():
+        elif "error" in message.lower():
             color = self.COLORS['red']
         elif "warn" in message.lower():
             color = self.COLORS['yellow']
         elif "success" in message.lower():
             color = self.COLORS['green']
+        else:
+            color = self.COLORS['reset']
 
         self.original_print(f"{color}{message}{self.COLORS['reset']}", **kwargs)
 
 if __name__ == "__main__":
-    BeautifulTerminal()
-    print("Das", "ist", "ein", "test" + ".", color="blue")
+    BeautifullTerminal()
+    print("This", "is", "a", "test" + ".", color="blue")
     print("This is an error message!")
     print("This is a warning message!")
     print("This is a success message!")
+else:
+    BeautifullTerminal()

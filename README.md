@@ -1,113 +1,115 @@
 # BeautifulTerminal
 
-**BeautifulTerminal** ist eine Python-Bibliothek, die die Terminalausgabe automatisch verschönert, indem sie Farben basierend auf dem Inhalt der Nachrichten hinzufügt. Diese Bibliothek verbessert die Lesbarkeit deiner Konsolenanwendungen und macht es einfacher, Protokollausgaben und Nachrichten zu verstehen. Nach dem Import ist keine zusätzliche Einrichtung erforderlich!
+**BeautifulTerminal** is a Python library that automatically beautifies terminal output by adding colors based on the content of the messages. This library improves the readability of your console applications and makes it easier to understand log outputs and messages. No additional setup is required after importing!
 
-## Funktionen
+## Features
 
-- **Automatische Farben**:
-  - Fehler werden in Rot angezeigt.
-  - Warnungen werden in Gelb angezeigt.
-  - Erfolgsmeldungen werden in Grün angezeigt.
-  - Normale Nachrichten werden in Weiß angezeigt.
+- **Automatic Colors**:
+  - Errors are displayed in red.
+  - Warnings are displayed in yellow.
+  - Success messages are displayed in green.
+  - Regular messages are displayed in white.
 
-- **Einfache Integration**:
-  - Importiere einfach die Bibliothek, und sie funktioniert sofort.
+- **Easy Integration**:
+  - Simply import the library, and it works immediately.
 
-- **Anpassbar**:
-  - Du kannst die Farbcodes leicht ändern, um deinen Vorlieben gerecht zu werden.
+- **Customizable**:
+  - You can easily change the color codes to suit your preferences.
 
 ## Installation
 
-Um die Bibliothek zu installieren, verwende `pip`:
+To install the library, use `pip`:
 
 ```bash
 pip install beautifull_terminal
 ```
 
-## Erste Schritte
+## Getting Started
 
-Nach der Installation kannst du die Bibliothek schnell in deinen Python-Skripten verwenden. Folge diesen einfachen Schritten:
+After installation, you can quickly use the library in your Python scripts. Follow these simple steps:
 
-1. **Importiere die Bibliothek**:
-   ```python
-   import beautifull_terminal
-   ```
+1. **Import the library**:
 
-2. **Gib Nachrichten aus**:
-   Verwende die `print`-Funktion wie gewohnt. Die Bibliothek wendet automatisch die entsprechenden Farben basierend auf dem Inhalt deiner Nachrichten an.
+```python
+import beautifull_terminal
+```
 
-## Verwendung
+2. **Print messages**:
 
-Hier sind einige Beispiele, wie man die Bibliothek verwendet:
+Use the `print` function as usual. The library automatically applies the appropriate colors based on the content of your messages.
+
+## Usage
+
+Here are some examples of how to use the library:
 
 ```python
 import beautifull_terminal
 
-# Beispiele für die Verwendung der Bibliothek
-print("Das ist eine normale Nachricht.")  # Standardfarbe: Weiß
-print("Fehler: Etwas ist schiefgelaufen!", color="red")  # Fehlertext in Rot
-print("Warnung: Sei vorsichtig!", color="yellow")  # Warnung in Gelb
-print("Erfolg: Vorgang abgeschlossen!", color="green")  # Erfolg in Grün
+# Examples of using the library
+print("This is a regular message.")  # Default color: White
+print("Error: Something went wrong!")  # Error text in Red
+print("Warning: Be careful!")  # Warning in Yellow
+print("Success: Operation completed!")  # Success in Green
 ```
 
-### Ausgabe-Beispiele
+### Example Outputs
 
-- Normale Nachricht: Weiß
-- Warnung: Gelb
-- Fehler: Rot
-- Erfolg: Grün
+- Regular message: White
+- Warning: Yellow
+- Error: Red
+- Success: Green
 
-### Verwendung der `color`-Option
+### Using the `color` Option
 
-Die `print`-Funktion von `BeautifulTerminal` unterstützt eine optionale `color`-Parameter, mit dem du die Farbe des ausgegebenen Texts direkt angeben kannst. Beispiel:
+The `print` function in `BeautifulTerminal` supports an optional `color` parameter that lets you specify the color of the printed text directly. Example:
 
 ```python
 import beautifull_terminal
 
-print("Dieser Text ist normal.")  # Standardfarbe: Weiß
-print("Dieser Text ist rot!", color="red")  # Text in Rot
-print("Dieser Text ist gelb!", color="yellow")  # Text in Gelb
-print("Dieser Text ist grün!", color="green")  # Text in Grün
+print("This text is normal.")  # Default color: White
+print("This text is red!", color="red")  # Text in Red
+print("This text is yellow!", color="yellow")  # Text in Yellow
+print("This text is green!", color="green")  # Text in Green
 ```
 
-Wenn du eine ungültige Farbe angibst, wird die Standardfarbe verwendet. Dies gibt dir die Flexibilität, den Text nach deinen Wünschen zu gestalten.
+If you specify an invalid color, the default color is used. This gives you flexibility to customize the text to your liking.
 
-## Anpassung
+## Customization
 
-Du kannst die Farbcodes in der Bibliothek ändern, um das Erscheinungsbild der Ausgaben zu verändern. Dies ermöglicht es dir, die Bibliothek an dein bevorzugtes Terminal-Design oder persönliche Vorlieben anzupassen. Ändere einfach das `COLORS`-Dictionary in der `BeautifulTerminal`-Klasse.
+You can change the color codes in the library to modify the appearance of the outputs. This allows you to tailor the library to your preferred terminal design or personal preferences. Simply modify the `COLORS` dictionary in the `BeautifulTerminal` class.
 
-## Deaktivierung
+## Disabling
 
-Wenn du die Farbausgabe vorübergehend deaktivieren musst, kannst du dies tun:
+If you need to temporarily disable color output, you can do so:
 
 ```python
 import beautifull_terminal as bt
-bt.disable()  # Farbausgabe vorübergehend deaktivieren
+bt.disable()  # Temporarily disable color output
 ```
 
-Um die Farbausgabe wieder zu aktivieren:
+To re-enable color output:
 
 ```python
-bt.enable()  # Farbausgabe wieder aktivieren
+bt.enable()  # Re-enable color output
 ```
 
-## Kompatibilität
+## Compatibility
 
-Die `BeautifulTerminal`-Bibliothek ist mit jedem Terminal kompatibel, das ANSI-Escape-Codes unterstützt, was die meisten modernen Terminal-Emulatoren umfasst. Sie funktioniert jedoch möglicherweise nicht korrekt auf älteren Systemen oder in Umgebungen, die ANSI-Codes nicht unterstützen.
+The `BeautifulTerminal` library is compatible with any terminal that supports ANSI escape codes, which includes most modern terminal emulators. However, it may not work correctly on older systems or environments that do not support ANSI codes.
 
-## Danksagungen
+## Acknowledgments
 
-- Diese Bibliothek wurde von dem Bedarf an besserer Lesbarkeit der Terminalausgaben inspiriert.
-- Besonderer Dank geht an die Mitwirkenden und die Open-Source-Community für ihre kontinuierliche Unterstützung und Vorschläge.
+- This library was inspired by the need for better readability of terminal outputs.
+- Special thanks to the contributors and the open-source community for their continuous support and suggestions.
 
-## Lizenz
+## License
 
-Dieses Projekt ist unter der MIT-Lizenz lizenziert. Siehe die [LICENSE](LICENSE) Datei für weitere Details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-## Beiträge
+## Contributions
 
-Beiträge sind willkommen! Wenn du Vorschläge für Verbesserungen oder zusätzliche Funktionen hast, zögere nicht, ein Problem zu eröffnen oder einen Pull-Request einzureichen.
+Contributions are welcome! If you have suggestions for improvements or additional features, feel free to open an issue or submit a pull request.
 
-## Kontakt
+## Contact
 
-Für Fragen oder Feedback wende dich bitte über das [GitHub-Repository](https://github.com/StarGames2025/beautifull_terminal) an uns.
+For questions or feedback, please reach out to us through the [GitHub repository](https://github.com/StarGames2025/beautifull_terminal).
