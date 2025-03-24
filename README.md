@@ -21,7 +21,7 @@
 To install the library, use `pip`:
 
 ```bash
-pip install beautifull_terminal
+pip install beautifull-terminal
 ```
 
 ## Getting Started
@@ -43,7 +43,7 @@ Use the `print` function as usual. The library automatically applies the appropr
 Here are some examples of how to use the library:
 
 ```python
-import beautifull_terminal
+import BeautifullTerminal
 
 # Examples of using the library
 print("This is a regular message.")  # Default color: White

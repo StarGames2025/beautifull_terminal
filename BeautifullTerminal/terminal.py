@@ -54,12 +54,3 @@ class BeautifullTerminal:
             color = self.COLORS['reset']
 
         self.original_print(f"{color}{message}{self.COLORS['reset']}", **kwargs)
-
-if __name__ == "__main__":
-    BeautifullTerminal()
-    print("This", "is", "a", "test" + ".", color="blue")
-    print("This is an error message!")
-    print("This is a warning message!")
-    print("This is a success message!")
-else:
-    BeautifullTerminal()
